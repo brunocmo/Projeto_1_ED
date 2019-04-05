@@ -34,8 +34,8 @@ int main() {
     scanf("%f", &t);
 
     //Condição para saber se o neurônio esta ou ativado ou inibido
-    if(fneuronio(x,w,t,z) == 1) printf("Neuronio ativado!\n");
-    else printf("Neuronio inibido!\n");
+    if(fneuronio(x,w,t,z) == 1) printf("Neurônio ativado!\n");
+    else                        printf("Neurôno inibido!\n");
 
     return 0;
 }
