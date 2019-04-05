@@ -4,6 +4,7 @@
  * Nomes: Bruno Carmo Nunes 18/0117548
  *        Guilherme 1       xx/XXXXXXX
  *        Guilherme 2       xx/XXXXXXX
+ * Comando compilação(Linux): gcc p1.c -Wall -o p1
 */
 #include <stdio.h>
 #include <stdlib.h>
