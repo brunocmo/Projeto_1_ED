@@ -25,7 +25,6 @@ int main() {
 
     //Laço para entrada dos valores dos vetores x e w
     while (i <= 9){
-
         printf("Coluna %d: ",i+1);
         scanf("%f %f", &x[i], &w[i]);
         i++;
@@ -43,14 +42,12 @@ int main() {
 
 //Função neurônio que com base no limitador T(float c) retorna o estado do neurônio
 int fneuronio(float* a,float* b, float c, int d){
-
     if(sum(a,b,d) < c) return 0;
     else               return 1;
 }
 
-//Funcao que faz a somas das multiplicações de vetores, onde o inteiro i é o número de repeticoes
+//Função que faz a somas das multiplicações de vetores, onde o inteiro i é o número de repeticoes
 float sum(float *a, float *b, int i){
-
     if(i == 1) return (*a)*(*b);
     else return (*a)*(*b)+(sum((++a),(++b),(i-1)));
 }
