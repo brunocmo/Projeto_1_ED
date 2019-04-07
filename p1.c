@@ -7,20 +7,19 @@
  * Comando compilação(Linux): gcc p1.c -Wall -o p1
 */
 #include <stdio.h>
-#include <stdlib.h>
 
 //Pré inicializacao das funções
-int fneuronio(float* a,float* b, float c,int d);
+int *fneuronio(float* a,float* b, float c,int d);
 float sum(float* a,float* b,int i);
 
 int main() {
 
-    //Declaração de variáveis
-    float x[10];
-    float w[10];
-    float t;
-    int z = 10;
-    int i = 0;
+    float x[10]; //Armazenamento da Entrada
+    float w[10]; //Armazenamento do Peso
+    float t;     //Armazenamento do limiar T
+    int z = 10;  //Numero maximo de elementos da entrada
+    int i = 0;   //Entrada para o Laco
+    int *resp;   //Ponteiro para a resposta dos neuronios
 
     printf("Digite o valor real para ENTRADA e PESO Ex: \"4.4 6.7\" \n");
 
@@ -34,17 +33,20 @@ int main() {
     printf("Digite um valor real para o limiar T: ");
     scanf("%f", &t);
 
+    resp = fneuronio(x,w,t,z);
     //Condição para saber se o neurônio esta ou ativado ou inibido
-    if(fneuronio(x,w,t,z) == 1) printf("Neurônio ativado!\n");
+    if(*resp == 1) printf("Neurônio ativado!\n");
     else                        printf("Neurôno inibido!\n");
 
     return 0;
 }
 
 //Função neurônio que com base no limitador T(float c) retorna o estado do neurônio
-int fneuronio(float* a,float* b, float c, int d){
-    if(sum(a,b,d) < c) return 0;
-    else               return 1;
+int *fneuronio(float* a,float* b, float c, int d){
+    int *resp;
+    if(sum(a,b,d) < c) *resp = 0;
+    else               *(resp) = 1;
+    return resp;
 }
 
 //Função que faz a somas das multiplicações de vetores, onde o inteiro i é o número de repeticoes
