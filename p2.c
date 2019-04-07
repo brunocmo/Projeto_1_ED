@@ -44,35 +44,28 @@ int main(){
 }
 
 int *recebe_notas(float *a,int i) {
-
     int *APR;
     int x[10] = {0,0,0,0,0,0,0,0,0,0};
     int j;
     APR = x;
 
     for (j=0; j <= i-1; j++) {
-
         if (*(a + j) >= 6) *(APR + j) = 1;
         else               *(APR + j) = 0;
-
     }
-
     return APR;
 }
 int *conta_notas(int *a, int i){
-
     int *ptr;
     int aval[2] = {0,0};
     ptr = aval;
     int j;
 
     for(j=0;j<=i-1;j++){
-
         if (*(a + j) == 1) *aval += 1;
         else               *(aval+1) += 1;
     }
     return ptr;
-
 }
 
 int percent_aprov(int *aprov, int *reprov, int *resp){
@@ -81,9 +74,6 @@ int percent_aprov(int *aprov, int *reprov, int *resp){
 
     *resp = *aprov * 10;
     *(resp +1) = *reprov * 10;
-
     if( *ptr >= 6 ) return 1;
     else            return 0;
-
-
 }
