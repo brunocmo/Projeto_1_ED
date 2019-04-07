@@ -45,7 +45,7 @@ int main() {
 int *fneuronio(float* a,float* b, float c, int d){
     int *resp;
     if(sum(a,b,d) < c) *resp = 0;
-    else               *(resp) = 1;
+    else               *resp = 1;
     return resp;
 }
 
