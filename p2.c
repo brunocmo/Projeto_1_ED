@@ -5,6 +5,7 @@
  *        Guilherme 1       xx/XXXXXXX
  *        Guilherme 2       xx/XXXXXXX
  * Comando compilação(Linux): gcc p1.c -Wall -o p2
+ Programa para saber quantidade de alunos aprovados e reprovados.
 */
 #include <stdio.h>
 
