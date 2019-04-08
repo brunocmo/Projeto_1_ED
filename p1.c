@@ -21,7 +21,7 @@ int main() {
     int i = 0;   //Entrada para o Laco
     int *resp;   //Ponteiro para a resposta dos neuronios
 
-    printf("Digite o valor real para ENTRADA e PESO Ex: \"4.4 6.7\" \n");
+    printf("Digite o valor real da ENTRADA e PESO para identificar se o neuronio biologico está ou não ativado. Ex: \"4.4 6.7\" \n");
 
     //Laço para entrada dos valores dos vetores x e w
     while (i <= 9){
