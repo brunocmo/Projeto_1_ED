@@ -5,6 +5,7 @@
  *        Guilherme 1       xx/XXXXXXX
  *        Guilherme 2       xx/XXXXXXX
  * Comando compilação(Linux): gcc p1.c -Wall -o p1
+ * Programa de representação de um neuronio logico.
 */
 #include <stdio.h>
 
