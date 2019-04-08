@@ -2,7 +2,7 @@
  * Estruturas de Dados 1 - 193704 TURMA: B
  * Professor: Mateus Mendelson
  * Nomes: Bruno Carmo Nunes 18/0117548
- * Comando compilação(Linux): gcc p1.c -Wall -o p2
+ * Comando compilação(Linux): gcc p2.c -Wall -o p2
  Programa para saber quantidade de alunos aprovados e reprovados.
 */
 #include <stdio.h>
